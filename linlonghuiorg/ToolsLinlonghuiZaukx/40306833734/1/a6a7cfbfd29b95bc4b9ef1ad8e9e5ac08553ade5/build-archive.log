@@ -1,0 +1,63 @@
+Command line invocation:
+    /Applications/Xcode_26.3.app/Contents/Developer/usr/bin/xcodebuild archive -workspace /Users/runner/work/ToolsLinlonghuiZaukx/ToolsLinlonghuiZaukx/ToolsLinlonghuiZaukx.xcworkspace -scheme ToolsLinlonghuiZaukx -configuration Release -destination generic/platform=iOS -skipMacroValidation -skipPackagePluginValidation -archivePath /Users/runner/work/ToolsLinlonghuiZaukx/ToolsLinlonghuiZaukx/build.xcarchive
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (5 targets)
+    Target 'ToolsLinlonghuiZaukx' in project 'ToolsLinlonghuiZaukx'
+        ➜ Implicit dependency on target 'Pods-ToolsLinlonghuiZaukx' in project 'Pods' via file 'Pods_ToolsLinlonghuiZaukx.framework' in build phase 'Link Binary'
+        ➜ Implicit dependency on target 'CoreSubscriptionKit' in project 'Pods' via options '-framework CoreSubscriptionKit' in build setting 'OTHER_LDFLAGS'
+    Target 'Pods-ToolsLinlonghuiZaukx' in project 'Pods'
+        ➜ Explicit dependency on target 'CoreSubscriptionKit' in project 'Pods'
+        ➜ Explicit dependency on target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+    Target 'CoreSubscriptionKit' in project 'Pods'
+        ➜ Explicit dependency on target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+    Target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+    Target 'UMDevice' in project 'Pods' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk -x objective-c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/usr/bin/momc --dry-run --action generate --swift-version 5.9 --sdkroot /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk --iphoneos-deployment-target 16.0 --module ToolsLinlonghuiZaukx /Users/runner/work/ToolsLinlonghuiZaukx/ToolsLinlonghuiZaukx/Sources/ManagedModel/ToolsLinlonghuiZaukx.xcdatamodeld /Users/runner/Library/Developer/Xcode/DerivedData/ToolsLinlonghuiZaukx-heconysbobaxinepigsedtfboybd/Build/Intermediates.noindex/ArchiveIntermediates/ToolsLinlonghuiZaukx/IntermediateBuildFilesPath/ToolsLinlonghuiZaukx.build/Release-iphoneos/ToolsLinlonghuiZaukx.build/DerivedSources/CoreDataGenerated/ToolsLinlonghuiZaukx
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/runner/work/ToolsLinlonghuiZaukx/ToolsLinlonghuiZaukx/Sources/Resources/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -V
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 007cdd6102fcdcd79a9f4b2c66847c9c
+Build description path: /Users/runner/Library/Developer/Xcode/DerivedData/ToolsLinlonghuiZaukx-heconysbobaxinepigsedtfboybd/Build/Intermediates.noindex/ArchiveIntermediates/ToolsLinlonghuiZaukx/IntermediateBuildFilesPath/XCBuildData/007cdd6102fcdcd79a9f4b2c66847c9c.xcbuilddata
+/Users/runner/work/ToolsLinlonghuiZaukx/ToolsLinlonghuiZaukx/ToolsLinlonghuiZaukx.xcodeproj: error: Provisioning profile "appstore-com.ryjv.nsqf.zmkc-20261026102216613" doesn't include the App Groups capability. (in target 'ToolsLinlonghuiZaukx' from project 'ToolsLinlonghuiZaukx')
+/Users/runner/work/ToolsLinlonghuiZaukx/ToolsLinlonghuiZaukx/ToolsLinlonghuiZaukx.xcodeproj: error: Provisioning profile "appstore-com.ryjv.nsqf.zmkc-20261026102216613" doesn't support the group.com.linlonghui.share App Group. (in target 'ToolsLinlonghuiZaukx' from project 'ToolsLinlonghuiZaukx')
+/Users/runner/work/ToolsLinlonghuiZaukx/ToolsLinlonghuiZaukx/ToolsLinlonghuiZaukx.xcodeproj: error: Provisioning profile "appstore-com.ryjv.nsqf.zmkc-20261026102216613" doesn't include the com.apple.security.application-groups entitlement. (in target 'ToolsLinlonghuiZaukx' from project 'ToolsLinlonghuiZaukx')
+** ARCHIVE FAILED **
+
+
+The following build commands failed:
+	Archiving workspace ToolsLinlonghuiZaukx with scheme ToolsLinlonghuiZaukx
+(1 failure)
