@@ -1,0 +1,14 @@
+Command line invocation:
+    /Applications/Xcode_26.3.app/Contents/Developer/usr/bin/xcodebuild -list -workspace /Users/runner/work/ToolsLinlonghuiZaukx/ToolsLinlonghuiZaukx/ToolsLinlonghuiZaukx.xcworkspace
+
+Information about workspace "ToolsLinlonghuiZaukx":
+    Schemes:
+        CoreSubscriptionKit
+        Pods-ToolsLinlonghuiZaukx
+        Pods-ToolsLinlonghuiZaukx_Test
+        Pods-ToolsLinlonghuiZaukxTests
+        ToolsLinlonghuiZaukx
+        ToolsLinlonghuiZaukx_Test
+        UMCommon
+        UMDevice
+
